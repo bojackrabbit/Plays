@@ -10,13 +10,15 @@ public class NumberWizard : MonoBehaviour {
 	
 	
 	void Start () {
+		//FirstGuess();
 		StartGame();
 	}
 
 	void StartGame () {
 		max = 1000;
 		min = 1;
-		guess = 500;
+		//guess = 500;
+		guess = (Random.Range(0, 1000));
 		
 		print ("=======================");
 		print ("Welcome to Number Wizard");
